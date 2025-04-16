@@ -100,12 +100,28 @@
             background-color: #fff;
             margin-bottom: 8px;
             object-fit: contain;
+            transition: all 0.4s ease;
         }
 
         .estudiante-nombre {
             font-size: 18px;
             text-align: center;
-            color: rgb(104, 178, 238);
+            color: rgb(76, 146, 203);
+            transition: all 0.4s ease;
+        }
+
+        .estudiante-item:hover {
+            background-color: #99c5dd;
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        .estudiante-item:hover img {
+            transform: scale(1) rotate(2deg);
+            border-color: #99c5dd;
+        }
+
+        .estudiante-item:hover .estudiante-nombre {
+            transform: scale(1.05);
         }
 
         footer {
