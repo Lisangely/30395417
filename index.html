@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ATI[UCV] 2024-1</title>
+    <link rel="icon" href="facultad.ico" type="image/x-icon">
+    <style>
+          * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 900px;
+            margin: auto;
+            padding-top: 20px; 
+            background-color: white;
+            align-items: center;
+        }
+
+        .titulo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .titulo span {
+            font-size: 14px;
+        }
+
+        .saludo {
+            font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+        .estudiante-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .estudiante-item {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            width: 200px;
+            height: 200px;
+            padding: 15px;
+            display: block !important;  
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2); 
+            background-color: #eaeef1bb; 
+            place-items: center;
+            text-align: center;
+        }
+
+        .estudiante-item img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: cover;
+            background-color: #fff;
+            margin-bottom: 8px;
+            object-fit: contain;
+        }
+
+        .estudiante-nombre {
+            font-size: 18px;
+            text-align: center;
+            color: rgb(104, 178, 238);
+        }
+
+        footer {
+            background-color: #9bbef2;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        header {
+            width: 100%;
+            background-color: #9bbef2;
+            text-align: center;
+        }
+        nav ul li {
+            display: grid;
+            align-items: center;    
+            height: 100%;
+            padding: 0 10px;
+            border-left: 1px solid white;
+        }
+
+        nav ul li:first-child {
+            border-left: none;
+        }
+
+        nav ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            height: 45px;  
+            padding: 0;
+            margin: 0;
+        }
+
+         input {
+            padding: 5px;
+            font-size: 12px;
+            width: 160px;
+            border: none;
+        }
+
+         button {
+            color: #4d94ff;
+            border: none;
+            padding: 4.5px 13px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li><div class="titulo">ATI<span>[UCV]</span> 2024-1</div>
+                    <li><div class="saludo">Hola, Lisangely Goncalves</div>
+                    <li>
+                        <form action="#" method="get">
+                            <input type="text" nombre="busqueda" placeholder="Nombre...">
+                            <button type="submit">Buscar</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <ul class="estudiante-list">
+                <li class="estudiante-item">
+                    <img src="30395417.jpg" alt="Lisangely Goncalves">
+                    <div class="estudiante-nombre">Lisangely Goncalves</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy6/dummy.jpg"  alt="Juan Antonio Perez">
+                    <div class="estudiante-nombre">Juan Antonio Perez</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy3/dummy.jpg" alt="Maritza Rodriguez">
+                    <div class="estudiante-nombre">Maritza Rodriguez</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy1/dummy.jpg" alt="Emilia Casado">
+                    <div class="estudiante-nombre">Emilia Casado</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy4/dummy.jpg" alt="Enrique Colina">
+                    <div class="estudiante-nombre">Enrique Colina</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy2/dummy.jpg" alt="María Elena Pinto">
+                    <div class="estudiante-nombre">María Elena Pinto</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy5/dummy.jpg" alt="Ronald Gutierrez">
+                    <div class="estudiante-nombre">Ronald Gutierrez</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy6/dummy.jpg" alt="Juan Antonio Perez">
+                    <div class="estudiante-nombre">Juan Antonio Perez</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy3/dummy.jpg" alt="Maritza Rodriguez">
+                    <div class="estudiante-nombre">Maritza Rodriguez</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy1/dummy.jpg" alt="Emilia Casado">
+                    <div class="estudiante-nombre">Emilia Casado</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy4/dummy.jpg" alt="Enrique Colina">
+                    <div class="estudiante-nombre">Enrique Colina</div>
+                </li>
+                <li class="estudiante-item">
+                    <img src="dummies/dummy2/dummy.jpg" alt="María Elena Pinto">
+                    <div class="estudiante-nombre">María Elena Pinto</div>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            Copyright © 2024 Escuela de computación - ATI. Todos los derechos reservados
+        </footer>
+    </div>
+</body>
+</html>
