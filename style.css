@@ -1,3 +1,25 @@
+        h2{
+            margin-bottom: 3px; 
+            color: orange;
+        }
+        .primera-oracion{
+            margin-top: 5px;
+        }
+        .segunda-oracion{
+            margin-left: 130px;
+        }
+        .tercera-oracion{
+            margin-left: 135px;
+        }
+        .cuarta-oracion{
+            margin-left: 40px;
+        }
+        .quinta-oracion{
+            margin-left: 47px;
+        }
+        .sexta-oracion{
+            margin-left: 93px;
+        }
         .caja-perfil {
             display: grid;
             grid-template-columns: 500px 1fr;
