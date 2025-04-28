@@ -62,7 +62,7 @@
             margin: 0;
         }
 
-          * {
+        * {
             box-sizing: border-box;
         }
         .cajita {
@@ -77,6 +77,7 @@
             font-size: 24px;
             font-weight: bold;
             color: white;
+            text-align: center;
         }
 
         .titulo span {
@@ -92,45 +93,45 @@
         section {
             padding: 20px;
         }
+
         .estudiante-list {
             list-style: none;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            display: flex;
+            flex-wrap: wrap;
             gap: 24px;
             margin: 0;
             padding: 0;
+            justify-content: center; 
         }
 
         .estudiante-item {
-            display: grid;
-            grid-template-columns: 50px 1fr;
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             padding: 15px;
-            display: block !important;  
-            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2); 
-            background-color: #eaeef1bb; 
-            place-items: center;
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            background-color: #eaeef1bb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
             text-align: center;
+            gap: 10px;
         }
-
+        
         .estudiante-item img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: cover;
-            background-color: #fff;
-            margin-bottom: 8px;
-            object-fit: contain;
-            transition: all 0.4s ease;
+            width: auto;
+            height: auto;
+            max-height: 120px; 
+            object-fit: contain; 
         }
-
+        
         .estudiante-nombre {
             font-size: 18px;
-            text-align: center;
             color: rgb(76, 146, 203);
             transition: all 0.4s ease;
+            white-space: nowrap; 
         }
+        
 
         .estudiante-item:hover {
             background-color: #99c5dd;
@@ -158,37 +159,86 @@
             background-color: #9bbef2;
             text-align: center;
         }
+        nav ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            height: 45px;
+            background-color: #a4c6f4; 
+        }
+        
         nav ul li {
-            display: grid;
-            align-items: center;    
+            flex: 1; 
+            display: flex;
+            align-items: center;
+            justify-content: center; 
             height: 100%;
             padding: 0 10px;
             border-left: 1px solid white;
         }
-
+        
         nav ul li:first-child {
-            border-left: none;
+            border-left: none; 
         }
 
-        nav ul {
+        button {
+            color: #4d94ff;
+            border: none;
+            padding: 4.5px 13px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            height: 45px;  
-            padding: 0;
-            margin: 0;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+            place-items: center;
         }
-
-         input {
+      
+        input[type="text"] {
             padding: 5px;
             font-size: 12px;
             width: 160px;
             border: none;
         }
-
-         button {
-            color: #4d94ff;
-            border: none;
-            padding: 4.5px 13px;
-            cursor: pointer;
+      
+        form:hover button {
+            background-color: rgb(220, 244, 252);
         }
+
+        @media (min-width: 320px) and (max-width: 480px){
+            html {
+                font-size: 14px;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 768px) {
+            html {
+                font-size: 15px;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            html {
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 1025px) and (max-width: 1200px) {
+            html {
+                font-size: 17px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .imagen-perfil {
+              content: url('CEDULAPequena.jpg');
+              max-width: 480px;
+            }
+          }
+    
+          @media (min-width: 769px) {
+            .imagen-perfil {
+              content: url('CEDULAGrande.jpg');
+              max-width: 720px;
+            }
+          }
