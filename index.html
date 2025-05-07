@@ -15,12 +15,12 @@
     <header>
         <nav>
             <ul>
-                <li><div class="titulo">ATI<span>[UCV]</span> 2024-1</div>
-                <li><div class="saludo">Hola, Lisangely Goncalves</div>
+                <li><div class="titulo" data-i18n="sitio">ATI<span>[UCV]</span> 2024-1</div>
+                <li><div class="saludo" data-i18n="saludo">, <span id="nombre-usuario"></span></div>
                 <li>
                     <form action="#" method="get">
-                        <input type="text" nombra="busqueda" placeholder="Nombre...">
-                        <button type="submit">Buscar</button>
+                        <input type="text" placeholder="Nombre..." data-i18n-placeholder="nombre">
+                        <button type="submit" data-i18n="buscar"></button>
                     </form>
                 </li>
             </ul>
@@ -29,11 +29,10 @@
     
     <section>
         <ul class="estudiante-list"></ul>
-        <p id="no-results-message" class="no-results-mensaje"></p> 
+        <p id="no-results-message" class="mensaje-fallo"></p> 
     </section>
     <footer>
-        <p data-i18n="copyRight">Copyright © 2024 Escuela de computación -
-            ATI. Todos los derechos reservados</p>
+        <p data-i18n="copyRight"></p>
     </footer>
 </body>
 </html>

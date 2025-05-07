@@ -1,3 +1,8 @@
+        .mensaje-fallo {
+            color: #90b1eb;
+            display: none;
+            text-align: center;
+        }
         h2{
             margin-bottom: 3px; 
             color: orange;

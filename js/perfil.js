@@ -49,15 +49,7 @@ if (cedulaUsuario) {
                                 const enlace = elemento.querySelector('#contacto-email');
 
                                 if (enlace && partesTexto.length === 2) {
-                                    elemento.childNodes[0].textContent = partesTexto[0];
-                                    enlace.href = `mailto:${correo}`;
-                                    enlace.textContent = correo;
-
-                                    if (elemento.childNodes.length > 2) {
-                                        elemento.childNodes[2].textContent = partesTexto[1];
-                                    } else {
-                                        elemento.appendChild(document.createTextNode(partesTexto[1]));
-                                    }
+                                    elemento.innerHTML = `${partesTexto[0]}<a href="mailto:${correo}" id="contacto-email">${correo}</a>${partesTexto[1]}`;
                                 }
                             } else {
                                 elemento.textContent = valorTraducido;
