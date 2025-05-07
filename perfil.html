@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisangely Goncalves</title>
-    <link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="conf/configES.json"></script>
-
+    <link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <script src="js/perfil.js" defer></script>
 </head>
 <body>
     <div class="contenedor-perfil">
-        <img srcset="CEDULAPequena.jpg 480w, CEDULAGrande.jpg 720w" sizes="(min-width: 769px)720px, (max-width: 769px) 480px" alt="Foto de perfil" class="imagen-perfil">
+        <img id= "perfil-imagen" src= "" alt="Foto de perfil" class="imagen-perfil">
         <div class="caja-perfil">
-            <h2>Lisangely Goncalves</h2>
-            <p class="primera-oracion"><em>Soy estudiante de la licenciatura Computación de la UCV, actualmente cursando sexto semestre. Me encuentro trabajando como QA en una empresa de apuestas en linea, pero estoy estudiando para empezar a colaborar con el equipo en la parte de desarrollo web.</em></p>
-            <p class="parrafo-perfil"> Mi color favorito es: <span class="segunda-oracion">Beige</span> </p>
-            <p class="parrafo-perfil"> Mi libro favorito es: <span class="tercera-oracion">El Hobbit</span> </p>
-            <p class="parrafo-perfil"> Mi estilo de música preferida es: <span class="cuarta-oracion">Rock alternativo</span> </p>
-            <p class="parrafo-perfil"> Mis Video juegos favoritos son: <span class="quinta-oracion">Pokémon y Dead by Daylight</span> </p>
-            <p class="parrafo-perfil"> <strong>Lenguajes aprendidos: <span class="sexta-oracion">C++, C#, C, Java, Python</span> </strong> </p>
-            <p class="parrafo-perfil"> Si necesitan comunicarse conmigo me pueden escribir a: <a href="mailto:lisangelyg@gmail.com" class="enlace-email">lisangelyg@gmail.com</a></p>
+            <h2 id="nombre"></h2>
+            <p class="primera-oracion" id="descripcion" data-i18n="descripcion"></p>
+            <p class="parrafo-perfil"> Mi color favorito es: <span class="segunda-oracion" id="color"></span> </p>
+            <p class="parrafo-perfil"> Mi libro favorito es: <span class="tercera-oracion" id="libro"></span> </p>
+            <p class="parrafo-perfil"> Mi estilo de música preferida es: <span class="cuarta-oracion" id="musica"></span> </p>
+            <p class="parrafo-perfil"> Mis Video juegos favoritos son: <span class="quinta-oracion" id="video-juego"></span> </p>
+            <p class="parrafo-perfil"> <strong>Lenguajes aprendidos: <span class="sexta-oracion" id ="lenguajes"></span> </strong> </p>
+            <p class="parrafo-perfil"> Si necesitan comunicarse conmigo me pueden escribir a: <a href="" class="enlace-email" id="contacto-email"></a></p>
         </div>
 </body>
 </html>

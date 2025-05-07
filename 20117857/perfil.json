@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Angel Acosta",
 	"descripcion":"Soy estudiante de Licenciatura en Computación en la Universidad Central de Venezuela. Vivo en San Antonio de los Altos. Soy preparador de Matemáticas Discretas I.",
 	"color": "Azul",
@@ -9,5 +9,6 @@ const perfil = {
 	"email":"angelxob@hotmail.com",
 	"ci": "20117857",
 	"genero":"masculino",
-	"fecha_nacimiento":"28/05/1991"
+	"fecha_nacimiento":"28/05/1991",
+	"imagen": "20117857.PNG"
 }

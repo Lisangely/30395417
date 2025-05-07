@@ -1,4 +1,4 @@
-const perfil = {
+{
     "nombre": "Diego Branco",
     "descripcion": "Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención \"Ingeniería de Software\".",
     "color": "Verde",
@@ -9,5 +9,6 @@ const perfil = {
     "email": "diegoh89@gmail.com",
     "ci": "18443368",
     "genero": "masculino",
-    "fecha_nacimiento": "14/06/1989"
+    "fecha_nacimiento": "14/06/1989",
+	"imagen": "18443368.jpg"
 }

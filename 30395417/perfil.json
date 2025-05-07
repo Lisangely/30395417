@@ -1,4 +1,4 @@
-const perfil = {	
+{	
 	"nombre":"Lisangely Goncalves",
 	"descripcion":"Soy estudiante de la licenciatura Computación de la UCV, actualmente cursando sexto semestre. Me encuentro trabajando como QA en una empresa de apuestas en linea, pero estoy estudiando para empezar a colaborar con el equipo en la parte de desarrollo web.",
 	"color": "Beige",
@@ -9,5 +9,6 @@ const perfil = {
 	"email":"lisangelyg@gmail.com",
 	"ci": "30395417",
 	"genero":"femenino",
-	"fecha_nacimiento":"04/08/2002"
+	"fecha_nacimiento":"04/08/2002",
+	"imagen": "30395417.jpg"
 }
