@@ -1,87 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ATI[UCV] 2024-1</title>
-    <link rel="icon" href="facultad.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico">
+    <title ></title>
     <link rel="stylesheet" href="css/style.css">
-
     <script src="conf/configES.json"></script>
     <script src="js/index.js" defer></script>
+    <script src="datos/index.json"></script>
 
 </head>
 <body class="cajita">
-        <header>
-            <nav>
-                <ul>
-                    <li><div class="titulo">ATI<span>[UCV]</span> 2024-1</div>
-                    <li><div class="saludo">Hola, Lisangely Goncalves</div>
-                    <li>
-                        <form action="#" method="get">
-                            <input type="text" nombra="busqueda" placeholder="Nombre...">
-                            <button type="submit">Buscar</button>
-                        </form>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-            <ul class="estudiante-list">
-                <li class="estudiante-item">
-                    <img src="CEDULAGrande.jpg" alt="Lisangely Goncalves">
-                    <div class="estudiante-nombre">Lisangely Goncalves</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy6/dummy.jpg"  alt="Juan Antonio Perez">
-                    <div class="estudiante-nombre">Juan Antonio Perez</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy3/dummy.jpg" alt="Maritza Rodriguez">
-                    <div class="estudiante-nombre">Maritza Rodriguez</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy1/dummy.jpg" alt="Emilia Casado">
-                    <div class="estudiante-nombre">Emilia Casado</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy4/dummy.jpg" alt="Enrique Colina">
-                    <div class="estudiante-nombre">Enrique Colina</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy2/dummy.jpg" alt="María Elena Pinto">
-                    <div class="estudiante-nombre">María Elena Pinto</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy5/dummy.jpg" alt="Ronald Gutierrez">
-                    <div class="estudiante-nombre">Ronald Gutierrez</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy6/dummy.jpg" alt="Juan Antonio Perez">
-                    <div class="estudiante-nombre">Juan Antonio Perez</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy3/dummy.jpg" alt="Maritza Rodriguez">
-                    <div class="estudiante-nombre">Maritza Rodriguez</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy1/dummy.jpg" alt="Emilia Casado">
-                    <div class="estudiante-nombre">Emilia Casado</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy4/dummy.jpg" alt="Enrique Colina">
-                    <div class="estudiante-nombre">Enrique Colina</div>
-                </li>
-                <li class="estudiante-item">
-                    <img src="dummies/dummy2/dummy.jpg" alt="María Elena Pinto">
-                    <div class="estudiante-nombre">María Elena Pinto</div>
+    <header>
+        <nav>
+            <ul>
+                <li><div class="titulo">ATI<span>[UCV]</span> 2024-1</div>
+                <li><div class="saludo">Hola, Lisangely Goncalves</div>
+                <li>
+                    <form action="#" method="get">
+                        <input type="text" nombra="busqueda" placeholder="Nombre...">
+                        <button type="submit">Buscar</button>
+                    </form>
                 </li>
             </ul>
-        </section>
-
-        <footer>
-            Copyright © 2024 Escuela de computación - ATI. Todos los derechos reservados
-        </footer>
-    </div>
+        </nav>
+    </header>
+    
+    <section>
+        <ul class="estudiante-list"></ul>
+        <p id="no-results-message" class="no-results-mensaje"></p> 
+    </section>
+    <footer>
+        <p data-i18n="copyRight">Copyright © 2024 Escuela de computación -
+            ATI. Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const perfil = {
+{
 	"sitio": ["ATI","[UCV]","2024-1"],
 	"home": "Inicio",
 	"login": "Entrar",
