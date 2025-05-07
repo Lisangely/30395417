@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Lisangely Goncalves",
+	"descripcion":"Soy estudiante de la licenciatura Computación de la UCV, actualmente cursando sexto semestre. Me encuentro trabajando como QA en una empresa de apuestas en linea, pero estoy estudiando para empezar a colaborar con el equipo en la parte de desarrollo web.",
+	"color": "Beige",
+	"libro": ["El Hobbit"],
+	"musica": ["Rock Alternativo"],
+	"video_juego": ["Pokémon y Dead by Daylight"],
+	"lenguajes": ["C++, C#, C, Java, Python"],
+	"email":"lisangelyg@gmail.com",
+	"ci": "30395417",
+	"genero":"femenino",
+	"fecha_nacimiento":"04/08/2002"
+}
