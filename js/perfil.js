@@ -9,7 +9,6 @@ if (cedulaUsuario) {
         .then(respuesta => respuesta.json())
         .then(perfil => {
             const correo = perfil.email;
-
             document.title = perfil.nombre;
             document.getElementById('perfil-imagen').src = `${cedulaUsuario}/${perfil.imagen}`;
             document.getElementById('nombre').textContent = perfil.nombre;
@@ -59,14 +58,14 @@ if (cedulaUsuario) {
                 })
                 .catch(error => {
                     console.error('Error cargando el archivo de idioma:', error);
-                    alert("No se pudo cargar el archivo de idioma.");
+                    alert("No se pudo cargar el archivo de idioma");
                 });
 
         })
         .catch(error => {
             console.error('Error cargando el perfil:', error);
-            alert("No se pudo cargar el perfil. Verifique la cédula o el archivo.");
+            alert("No se pudo cargar el perfil");
         });
 } else {
-    alert("No se proporcionó una cédula en la URL.");
+    alert("No se proporciono una cédula en la URL");
 }

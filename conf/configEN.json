@@ -12,5 +12,6 @@
 	"lenguajes":"Languages learned:",
 	"email":"please send me a email to [email], if you need to contact me",
 	"buscar": "Search",
-	"saludo": "Hi"
+	"saludo": "Hi",
+	"no_results": "There are no students whose name is: [query]"
 }
