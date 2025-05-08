@@ -18,10 +18,13 @@ if (cedulaUsuario) {
             document.getElementById('musica').textContent = perfil.musica;
             document.getElementById('video-juego').textContent = perfil.video_juego;
 
+            const descripcionElemento = document.getElementById('descripcion');
+            descripcionElemento.innerHTML = `<em>${perfil.descripcion}</em>`;
+
             const lenguajesElemento = document.getElementById('lenguajes');
             lenguajesElemento.textContent = perfil.lenguajes.join(', ');
             lenguajesElemento.innerHTML = perfil.lenguajes.map(lenguaje => `<strong>${lenguaje}</strong>`).join(', ');
-
+            
             const enlaceEmail = document.getElementById('contacto-email');
             enlaceEmail.href = `mailto:${correo}`;
             enlaceEmail.textContent = correo;

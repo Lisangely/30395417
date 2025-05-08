@@ -4,26 +4,35 @@
             text-align: center;
         }
         h2{
-            margin-bottom: 3px; 
+            margin-bottom: 1px; 
             color: orange;
+        }
+        .parrafo-perfil {
+            margin: 0;
         }
         .primera-oracion{
             margin-top: 5px;
         }
-        .segunda-oracion{
-            margin-left: 130px;
+        .perfil-detalles {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            row-gap: 1px; 
+            column-gap: 12px;
+            font-family: sans-serif;
         }
-        .tercera-oracion{
-            margin-left: 135px;
+          
+        .fila {
+            display: contents;
         }
-        .cuarta-oracion{
-            margin-left: 40px;
+          
+        .etiqueta {
+            font-weight: normal;
+            text-align: left;
+            white-space: nowrap;
         }
-        .quinta-oracion{
-            margin-left: 47px;
-        }
-        .sexta-oracion{
-            margin-left: 93px;
+          
+        .respuesta {
+            font-weight: normal;
         }
         .caja-perfil {
             display: grid;
@@ -52,7 +61,7 @@
             margin: 20px auto;
         }
 
-        .enlace-email {
+        .enlace-email{
             color: orange; 
             text-decoration: none;
         }
@@ -62,9 +71,6 @@
 
         .enlace-email:hover {
             text-decoration: underline;
-        }
-        .parrafo-perfil {
-            margin: 0;
         }
 
         * {
@@ -237,14 +243,12 @@
 
         @media (max-width: 768px) {
             .imagen-perfil {
-              content: url('CEDULAPequena.jpg');
               max-width: 480px;
             }
           }
     
           @media (min-width: 769px) {
             .imagen-perfil {
-              content: url('CEDULAGrande.jpg');
               max-width: 720px;
             }
           }
